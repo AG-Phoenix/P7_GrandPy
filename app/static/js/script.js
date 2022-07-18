@@ -8,7 +8,7 @@ form.addEventListener("submit", askPapy)
 function askPapy(event){
   event.preventDefault()
   console.log(("askPapy"))
-	fetch("./data.json").then(r => r.json()).then(
+	fetch("./static/tmp/data.json").then(r => r.json()).then(
     r => {
       div.innerHTML += `<p class="question">${input.value}</p>`
       form.reset()
